@@ -1,0 +1,40 @@
+<div class="banner">
+	<div class="container">
+		<div class="header d-flex flex-column text-center justify-center w-100">
+			<h2 class="mb-3 fw-bold">Crypto screener</h2>
+			<h6>Check all the crypto currency latest updates</h6>
+		</div>
+		<div class="sub-header d-flex align-center h-50">
+			<marquee
+				behavior="scroll"
+				onmouseover="stop()"
+				onmouseout="start()"
+				direction="left"
+				loop="infinite"
+			>
+				<div class="row d-flex flex-nowrap">
+					<ng-container *ngFor="let row of bannerData">
+							<div class="card b-0">
+								<img [src]="row.image" width="100" class="img-fluid" alt="">
+								<div class="card-body">
+									<h5 class="card-title">
+										{{ row.symbol | uppercase }}
+										<span class="text-danger">
+											{{ row.market_cap_change_percentage_24h }}%
+										</span>
+									</h5>
+									<p class="card-text">
+										{{ row.current_price | currency: "UAH" }}
+									</p>
+								</div>
+							</div>
+					</ng-container>
+				</div>
+			</marquee>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3">
+
+</div>

@@ -1,0 +1,44 @@
+
+@import '../../styles.scss';
+
+.header {
+	height: 40%;
+
+	h2 {
+		font-size: $font-size-heading;
+	}
+
+	h6 {
+		color: darkgray;
+		text-transform: capitalize;
+		font-size: $font-size-base;
+	}
+}
+
+.banner {
+	background-color:  #d6e5f8;
+	height: 600px;
+}
+
+.card {
+	border: 0;
+	padding: 10px;
+	margin: 40px;
+	width: 100px;
+	height: 200px;
+	background: transparent;
+	color: #fff;
+
+	img {
+		width: 70px;
+		margin: 0 auto;
+	}
+
+	h5 {
+		font-weight: 500;
+	}
+
+	p {
+		font-weight: 700;
+	}
+}
