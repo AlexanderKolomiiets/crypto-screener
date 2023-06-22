@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CointDetailsComponent } from './coint-details.component';
+import { CoinDetailsComponent } from './coint-details.component';
 
-describe('CointDetailsComponent', () => {
-  let component: CointDetailsComponent;
-  let fixture: ComponentFixture<CointDetailsComponent>;
+describe('CoinDetailsComponent', () => {
+  let component: CoinDetailsComponent;
+  let fixture: ComponentFixture<CoinDetailsComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CointDetailsComponent]
+      declarations: [CoinDetailsComponent]
     });
-    fixture = TestBed.createComponent(CointDetailsComponent);
+    fixture = TestBed.createComponent(CoinDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

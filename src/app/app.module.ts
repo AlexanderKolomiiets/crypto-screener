@@ -11,14 +11,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { CoinListComponent } from './coin-list/coin-list.component';
-import { CointDetailsComponent } from './coint-details/coint-details.component';
+import { CoinDetailsComponent } from './coint-details/coint-details.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		CoinListComponent,
-		CointDetailsComponent
+		CoinDetailsComponent
 	],
 	imports: [
 		BrowserModule,
@@ -31,7 +34,10 @@ import { CointDetailsComponent } from './coint-details/coint-details.component';
 		MatToolbarModule,
 		MatSelectModule,
 		MatFormFieldModule,
-		MatInputModule
+		MatInputModule,
+		MatTableModule,
+		MatSortModule,
+		MatPaginatorModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
