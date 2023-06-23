@@ -1,27 +1,58 @@
-# CryptoScreener
+# Crypto Screener
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Crypto Screener is a tool that allows you to retrieve, filter, and sort cryptocurrency data in a convenient table format. Additionally, it provides detailed currency pages with interactive graphs based on real-time data.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Data Table**: View a comprehensive table of cryptocurrency data, including key information such as ticker symbol, price, market cap, change, and more.
+- **Filtering**: Easily filter cryptocurrencies based on various criteria, such as market cap, price, volume, or percentage change.
+- **Sorting**: Sort the data table by any column to quickly identify the top performers or underperformers.
+- **Currency Pages**: Access detailed pages for each cryptocurrency, presenting in-depth information and interactive graphs that display historical price trends.
+- **Real-Time Data**: All data provided by Crypto Screener is updated in real-time, ensuring that you have the most current and accurate information available.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To use Crypto Screener locally, follow these steps:
 
-## Build
+1. Clone the repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```bash
+   git clone https://github.com/AlexanderKolomiiets/crypto-screener.git
+   ```
 
-## Running unit tests
+2. Navigate to the project directory:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   cd crypto-screener
+   ```
 
-## Running end-to-end tests
+3. Install the dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   npm install
+   ```
 
-## Further help
+4. Start the development server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   npm start
+   ```
+
+5. Open your web browser and visit `http://localhost:4200` to access Crypto Screener.
+
+## Usage
+
+1. Upon accessing Crypto Screener, you will be presented with a table containing cryptocurrency data.
+2. Use the filter options to refine the data based on your desired criteria.
+3. Click on the column headers to sort the data in ascending or descending order.
+4. Click on any cryptocurrency ticker symbol to navigate to its currency page.
+5. On the currency page, you will find detailed information about the selected cryptocurrency, along with interactive graphs showcasing its price trends, trading volume, and market cap.
+
+## Technologies Used
+
+- Frontend: HTML, SCSS, JavaScript, Angular
+- Data Source: CoinGecko API
+
+
+Start exploring the world of cryptocurrencies with Crypto Screener today! Gain valuable insights, analyze market trends, and make informed decisions in the exciting realm of digital assets.
+

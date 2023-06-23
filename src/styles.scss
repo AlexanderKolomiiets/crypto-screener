@@ -33,10 +33,16 @@ $crypto-screener-theme: mat.define-dark-theme((
 @include mat.all-component-themes($crypto-screener-theme);
 
 /* You can add global styles to this file, and also import other style files */
-@import 'variables.scss';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: $font-family-base; background: #212121; }
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	background: #212121;
+}
 
 .mat-mdc-form-field-subscript-wrapper {
 	display: none;

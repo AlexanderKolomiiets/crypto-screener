@@ -1,17 +1,14 @@
-
-@import '../../styles.scss';
-
 .header {
 	height: 40%;
 
 	h2 {
-		font-size: $font-size-heading;
+		font-size: 3.75rem;
 	}
 
 	h6 {
 		color: darkgray;
 		text-transform: capitalize;
-		font-size: $font-size-base;
+		font-size: 0.8rem;
 	}
 }
 
@@ -56,10 +53,10 @@ td, th {
 	width: 25%;
 }
 
-:host ::ng-deep .mat-mdc-paginator-outer-container {
+.mat-mdc-paginator-outer-container {
     background-color: rgb(36, 37, 37);
 }
 
-:host ::ng-deep tr.mat-mdc-header-row {
+tr.mat-mdc-header-row {
     background-color: #009688;
 }
