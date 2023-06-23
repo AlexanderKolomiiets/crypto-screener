@@ -1,18 +1,18 @@
+import { CurrencyService } from './service/currency.service';
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss'],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	selectedCurrency: string = 'UAH';
+  selectedCurrency : string = "UAH";
+  constructor(private currencyService : CurrencyService){
 
-	constructor() {
-
-	}
-
-	sendCurrency(event: string) {
-		console.log(event);
-	}
+  }
+  sendCurrency(event:string){
+    console.log(event);
+    this.currencyService.setCurrency(event);
+  }
 }

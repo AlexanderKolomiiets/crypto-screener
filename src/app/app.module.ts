@@ -14,8 +14,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { NgChartsModule } from 'ng2-charts';
 import { CoinListComponent } from './coin-list/coin-list.component';
-import { CoinDetailsComponent } from './coint-details/coint-details.component';
+import { CoinDetailsComponent } from './coin-details/coin-details.component';
 
 @NgModule({
 	declarations: [
@@ -37,7 +38,8 @@ import { CoinDetailsComponent } from './coint-details/coint-details.component';
 		MatInputModule,
 		MatTableModule,
 		MatSortModule,
-		MatPaginatorModule
+		MatPaginatorModule,
+		NgChartsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

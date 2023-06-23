@@ -4,6 +4,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
+import { CurrencyService } from '../service/currency.service';
 
 @Component({
   selector: 'app-coin-list',
@@ -22,11 +23,18 @@ export class CoinListComponent implements OnInit {
 	constructor(
 		private api: ApiService,
 		private router: Router,
+		private currencyService : CurrencyService
 	) { }
 
 	ngOnInit(): void {
-		// this.getAllData();
-		// this.getBannerData();
+		this.getAllData();
+		this.getBannerData();
+		this.currencyService.getCurrency()
+		.subscribe(val=>{
+			this.currency = val;
+			this.getAllData();
+			this.getBannerData();
+		})
 	}
 
 	getBannerData() {
@@ -41,7 +49,6 @@ export class CoinListComponent implements OnInit {
 		this.api.getCurrency("UAH")
 		.subscribe(res => {
 			this.dataSource = new MatTableDataSource(res);
-			console.log(this.dataSource);
 			this.dataSource.paginator = this.paginator;
 			this.dataSource.sort = this.sort;
 		})
