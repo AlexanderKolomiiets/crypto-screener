@@ -2,6 +2,8 @@
 
 Crypto Screener is a tool that allows you to retrieve, filter, and sort cryptocurrency data in a convenient table format. Additionally, it provides detailed currency pages with interactive graphs based on real-time data.
 
+[DEMO LINK](https://AlexanderKolomiiets.github.io/crypto-screener/)
+
 ## Features
 
 - **Data Table**: View a comprehensive table of cryptocurrency data, including key information such as ticker symbol, price, market cap, change, and more.

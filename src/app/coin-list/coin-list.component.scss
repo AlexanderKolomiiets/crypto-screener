@@ -60,3 +60,27 @@ td, th {
 tr.mat-mdc-header-row {
     background-color: #009688;
 }
+
+.cdk-column-market_cap, .cdk-column-price_change_percentage_24h {
+	display: table-cell;
+
+	@media (max-width: 786px) {
+		display: none;
+	}
+}
+
+@media (max-width: 786px) {
+	.header {
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		h6 {
+			font-size: 0.6rem;
+		}
+	}
+
+	.banner {
+		height: 450px;
+	}
+}

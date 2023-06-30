@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3 details">
+        <div class="details">
             <div class="detail-img">
                 <img [src]="coinData?.image?.large" alt="">
-                <h3 class="text-center" style="font-size: 23px;">{{coinData?.name}}</h3>
-                <h2 [innerHtml]="coinData?.description?.en.split('. ')[0]"></h2>
+                <h3 class="text-center mt-3" style="font-size: 23px;">{{coinData?.name}}</h3>
+                <h2 class="detail-description" [innerHtml]="coinData?.description?.en.split('. ')[0]"></h2>
                 <div class="more-detail">
                     <span class="title">Rank: </span> <span class="value">{{coinData?.market_cap_rank}}</span><br>
                     <span class="title">Current Price: </span> <span class="value">{{coinData?.market_data.current_price.uah | currency: currency}}</span><br>
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="details-graph">
             <canvas style="width: 300px;" baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"></canvas>
             <div class="d-flex justify-content-around">
                 <button (click)="getGraphData(1)" class="btn btn-custom">24 hours</button>

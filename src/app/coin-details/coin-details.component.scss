@@ -1,10 +1,11 @@
 .details {
-    width: 30%;
+    // width: 30%;
     display: flex;
     margin-top: 25px;
     align-items: center;
-    border-right: 2px solid grey;
     flex-direction: column;
+	// border-right: 2px solid grey;
+
     h3 {
         font-weight: bold;
         margin-bottom: 20px;
@@ -34,13 +35,17 @@
     margin: 10px;
     line-height: 50px;
     .title {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 600;
     }
     .value {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 500;
     }
+}
+
+.detail-description {
+	font-size: 24px;
 }
 
 //#009688
@@ -62,4 +67,36 @@
 
 * {
     color: #fff;
+}
+
+@media (max-width: 786px) {
+	.btn-custom {
+		font-size: 12px;
+	}
+
+	.details {
+		width: 100%;
+		border-right: none;
+	}
+
+	.detail-description {
+		font-size: 20px;
+	}
+
+	.more-detail {
+		margin: 0;
+
+		.title {
+			font-size: 16px;
+		}
+		.value {
+			font-size: 16px;
+		}
+	}
+
+	.detail-img {
+		img {
+			max-width: 200px;
+		}
+	}
 }

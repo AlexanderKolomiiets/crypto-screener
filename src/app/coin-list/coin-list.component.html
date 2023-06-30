@@ -1,7 +1,7 @@
 <div class="banner">
 	<div class="container">
 		<div class="header d-flex flex-column text-center justify-center w-100">
-			<h2 class="mb-3 fw-bold">Crypto screener</h2>
+			<h2 class="mb-3 mt-3 fw-bold">Crypto screener</h2>
 			<h6>Check all the crypto currency latest updates</h6>
 		</div>
 		<div class="sub-header d-flex align-center h-50">
@@ -24,7 +24,7 @@
 										</span>
 									</h5>
 									<p class="card-text">
-										{{ row.current_price | currency: "UAH" }}
+										{{ row.current_price | currency: currency }}
 									</p>
 								</div>
 							</div>

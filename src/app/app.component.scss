@@ -1,3 +1,9 @@
 .example-spacer {
     flex: 1 1 auto;
 }
+
+.screener-title {
+	@media (max-width: 786px) {
+		font-size: 0.8rem;
+	}
+}
